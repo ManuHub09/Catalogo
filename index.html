@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+  <meta charset="UTF-8">
+  <title>Pon tu nombre aquí</title>
+  <link rel="stylesheet" href="./style.css">
+  
+</head>
+<body> 
+  <div>
+    <select id="Filtro">
+      <option value="Todos">Todos</option>
+      <option value="Premier League">Premier League</option>
+      <option value="La Liga">La Liga</option>
+      <option value="Bundesliga">Bundesliga</option>
+      <!--option value="Ligue1"> Ligue One</option-->
+    </select>
+  </div>
+  <hr>
+  <div id ="CRUD">
+    <input type="text" id="IntroLink" placeholder="Introducir Link"/>
+    <input type="text" id="IntroEquipo" placeholder="Introducir Equipo"/>
+    <select id="categoriasAnnadir">
+      <option value="Premier League">Premier League</option>
+      <option value="La Liga">La Liga</option>
+      <option value="Bundesliga">Bundesliga</option>
+    </select>
+    <button type="button" id="Modificar">Modificar</button>
+    <button type="button" id="Annadir">Añadir</button>
+  </div>
+  <hr>
+  <div id ="Formulario">
+    <p>Con los elementos seleccionados ...</p>
+    <label for="fname">Cambiar categoría</label>
+    <select name="categorias" id="categorias">
+      <option value="Todos">Todos</option>
+      <option value="Premier League">Premier League</option>
+      <option value="La Liga">La Liga</option>
+      <option value="Bundesliga">Bundesliga</option>
+    </select>
+    <button type="button" id="borrar">Borrar</button>
+  </div> 
+  <hr>
+  <div>
+    <button type="button" id="guardar">Guardar</button>
+  </div>
+  <div id="error">
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
